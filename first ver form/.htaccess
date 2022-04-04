@@ -1,0 +1,61 @@
+AuthType Basic  
+AuthName "Введите логин и пароль"
+AuthUserFile  /home/dev-adm/web/dev.adm-nk.ru/public_html/.htpasswd  
+require valid-user
+
+<Files .htpasswd> 
+   deny from all 
+</Files>
+
+<files .htaccess>
+order allow,deny
+deny from all
+</files>
+
+<IfModule mod_rewrite.c>
+   RewriteEngine On
+   RewriteBase /
+
+   # Removes index.php from ExpressionEngine URLs
+   RewriteCond %{THE_REQUEST} ^GET.*index\.php [NC]
+   RewriteCond %{REQUEST_URI} !/system/.* [NC]
+   RewriteRule (.*?)index\.php/*(.*) /$1$2 [R=301,NE,L]
+
+   # Directs all EE web requests through the site index file
+   RewriteCond %{REQUEST_FILENAME} !-f
+   RewriteCond %{REQUEST_FILENAME} !-d
+   RewriteRule ^(.*)$ /index.php/$1 [L]        
+</IfModule>
+
+
+Options +FollowSymLinks
+RewriteEngine On
+RewriteCond %{QUERY_STRING} (\<|%3C).*script.*(\>|%3E) [NC,OR]
+RewriteCond %{QUERY_STRING} GLOBALS(=|\[|\%[0-9A-Z]{0,2}) [OR]
+RewriteCond %{QUERY_STRING} _REQUEST(=|\[|\%[0-9A-Z]{0,2})
+RewriteRule ^(.*)$ index.php [F,L]
+
+SetEnvIfNoCase user-Agent ^FrontPage [NC,OR]
+SetEnvIfNoCase user-Agent ^Java.* [NC,OR]
+SetEnvIfNoCase user-Agent ^Microsoft.URL [NC,OR]
+SetEnvIfNoCase user-Agent ^MSFrontPage [NC,OR]
+SetEnvIfNoCase user-Agent ^Offline.Explorer [NC,OR]
+SetEnvIfNoCase user-Agent ^[Ww]eb[Bb]andit [NC,OR]
+SetEnvIfNoCase user-Agent ^Zeus [NC]
+
+<IfModule mod_headers.c>
+   Header append Cache-Control "no-store, no-cache, must-revalidate"
+</IfModule>
+ 
+<IfModule mod_expires.c>
+   ExpiresActive On ExpiresDefault "now"
+</IfModule>
+
+RewriteEngine On
+
+RewriteCond %{THE_REQUEST} " (/[^?/]+)\.php"
+RewriteRule ^ %1 [R=301,L]
+
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule ^([^/]+)$ /$1.php [L]
+

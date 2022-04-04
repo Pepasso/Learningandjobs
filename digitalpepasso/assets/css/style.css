@@ -1,0 +1,163 @@
+.header h1 {
+	letter-spacing: 15px;
+	font-size: 300%;
+}
+
+.header p {
+	color: white !important;
+	font-size: 150%;
+	letter-spacing: 3px;
+	font-family: 'matura mt script capitals', Georgia, Times, serif;
+	text-shadow: #EEEE00 0 0 10px;
+}
+
+p {
+	font-family: 'Cabin', Helvetica, Arial, sans-serif;
+	font-size: 150%;
+}
+
+.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
+    color: #fff;
+    background-color: #346270;
+}
+
+.nav-pills>li>a {
+	color: #fff;
+}
+
+.nav-pills>li>a:hover {
+	background-color: #346270;
+}
+
+
+.navbar-inverse {
+    padding: 1%;
+    border-radius: 0;
+	background-image: url(https://acegif.com/wp-content/gif/outerspace-58.gif);
+	background-repeat: round;
+	background-position: center;
+	background-size: 100% 100%;
+	
+	
+}
+
+@media (max-width: 767px) {
+	.nav-pills>li {
+		float: none;
+	}
+
+	.nav-pills {
+		text-align: center;
+	}
+
+	.header h1 { 
+	    font-size: 280%;
+	    letter-spacing: 5px;
+	}
+
+	.header {
+		text-align: center;
+	}
+} 
+
+
+.clear {
+	clear: both;
+	height: 63px;
+}
+
+.wrapper {
+	margin: auto;
+	display: flex;
+	max-width: 960px; /* 2 */
+	padding-top: 20px;
+	padding-bottom: 20px;
+  
+}
+
+html, body {
+	
+	max-height: 960px;
+}
+
+#clock {
+	font-family: Curlz MT;
+	font-size:30px;
+	color:rgb(247, 4, 117);	
+}
+
+@keyframes spin {
+	from {transform: rotate(0deg); }
+	to {transform: rotate(360deg); }
+}
+
+#logo img{
+	animation: spin 5s infinite linear;
+}
+
+#field {
+	width: 1390px;
+	height: 270px;
+	overflow: hidden;
+	cursor: pointer;
+	position: absolute;
+	top: -1px; right: -1px;
+}
+
+#ball {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 40px;
+	height: 40px;
+	transition: all 1s;
+}
+
+@keyframes pulsate {
+	50% { color: #fff; text-shadow: 0 -1px rgba(0,0,0,.3), 0 0 5px #ffd, 0 0 8px #fff; }
+   }
+
+#forgif1 {
+	font-family: 'Lobster', Georgia, Times, serif;
+	color: rgba(240, 6, 220, 0.644);
+	text-shadow: 0 -1px rgba(0,0,0,.1);
+	-webkit-animation: pulsate 1.2s linear infinite;
+	animation: pulsate 1.2s linear infinite;
+}
+
+#forgif2 {
+	animation-duration: 4s; opacity: 1; animation-iteration-count: infinite;
+	font-family: 'Lobster', Georgia, Times, serif;
+	color: rgba(240, 6, 220, 0.644);
+}
+
+#gify {
+	margin-top: 200px;
+}
+
+.margin-8 {
+	margin-top: 8%;
+}
+
+.panel {
+	border: none;
+}
+
+footer {
+	color: #666;
+	background: #222;
+	padding: 17px 0 18px 0;
+	border-top: 1px solid #000;
+}
+
+footer a .text-left {
+	padding-top: 10px;
+}
+
+footer a {
+	color: rgb(216, 16, 206);
+}
+
+footer a:hover {
+	color: #efefef;
+}

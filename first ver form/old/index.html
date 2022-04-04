@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ввод IP-Адреса</title>
+    </head>
+    <body>
+        <form method="post" action="insert.php">
+            <p>Введите ваш IP-адресс</p> <p>Узнать свой IP-адресс вы можете <a href="https://myip.ru/">Здесь</a></p>
+            <input type="ip" name="ip_adress" pattern="^(([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])\.){3}([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])$" required placeholder="Это ваш IP-адрес?" maxlength="20">
+            <input type = "ip" name="ip_adressadd" pattern="^(([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])\.){3}([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])$" required placeholder="IP адресс вводящего " maxlength="20">
+            <p>
+                <label for="date">Дата ввода ip: </label>
+                <input type="date" name="date"/>
+            </p>
+            <input type="submit" value="отправить">
+        </form>
+        </body>
+     </html>
+

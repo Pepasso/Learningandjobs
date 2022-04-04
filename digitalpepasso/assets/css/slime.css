@@ -1,0 +1,38 @@
+svg {
+    display: block;
+    margin-left: 500px;
+}
+polygon {
+    fill: #c405c4;
+}
+circle {
+    fill: transparent;
+    stroke: #35495e;
+    display: none;
+    
+}
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    input[type='range'] {
+      overflow: hidden;
+      width: 800px;
+      -webkit-appearance: none;
+      background-color: #5e629e;
+    }
+    
+    input[type='range']::-webkit-slider-runnable-track {
+      height: 10px;
+      -webkit-appearance: none;
+      color: #c405c4;
+      margin-top: -1px;
+    }
+    
+    input[type='range']::-webkit-slider-thumb {
+      width: 25px;
+      -webkit-appearance: none;
+      height: 25px;
+      cursor: ew-resize;
+      background: rgb(247, 4, 117);
+      box-shadow: -800px 0 0 800px #c405c4;
+    }
+
+}

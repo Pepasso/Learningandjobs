@@ -1,0 +1,333 @@
+<div class="popup callback-popup" data-name="conf">
+  <div class="popup--wrapper">
+    <div class="popup--window">
+      <div class="popup--close"></div>
+      <div class="popup--content">
+        <div class="popup--head">Заявка на аренду конференц-зала</div>
+        <form class="form form-conf form_visible" method="get" action="https://echo.htmlacademy.ru" autocomplete="off">
+          <div class="form--two-col form--row">
+            <div class="form--left-col">
+              <div class="select" data-select="" data-room-select="" style="width: 100%">
+                <select class="select--select" name="PLACE">
+                  <option value="1" data-price="1200" data-max-people="100" data-schedule="0" data-date-min="08:00" data-date-max="24:00">Мустаг</option>
+                  <option value="2" data-price="600" data-max-people="28" data-schedule="1" data-date-min="08:00" data-date-max="24:00">Таежный</option>
+                </select>
+                <div class="select--value"></div>
+                <div class="caption select--placeholder" data-select-placeholder="">Выберите зал</div>
+              </div>
+            </div>
+            <div class="form--right-col">
+              <div class="input-field" data-input-field>
+                <input type="number" class="input-field--input input--persons" name="PERSONS" data-persons-value required>
+                <div class="caption input-field--placeholder" data-input-placeholder>Предполагаемое количество человек</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="form--two-col">
+            <div class="form--info">Максимальная вместимость зала «<span data-room-value>Таежный</span>» — <span data-max-people-value>100</span> человек.</div>
+          </div>
+
+          <div class="form--subtitle">Варианты рассадки</div>
+          <div class="form--two-col form--row">
+            <div class="form--left-col">
+              <div class="table-buttons" data-room="1">
+                <label class="checkbox" for="one-more-room-resort-1">
+                  <input id="one-more-room-resort-1" type="radio" name="TABLE" value="Театр (до 100 чел.)" data-table="1" data-table-people="100"
+                         class="checkbox--checkbox" checked>
+                  <div class="checkbox--appearance"></div>
+                  <div class="checkbox--text">Театр (до 100 чел.)</div>
+                </label>
+                <label class="checkbox" for="one-more-room-resort-2">
+                  <input id="one-more-room-resort-2" type="radio" name="TABLE" value="Круглый стол (до 32 чел.)" data-table="2" data-table-people="32"
+                         class="checkbox--checkbox">
+                  <div class="checkbox--appearance"></div>
+                  <div class="checkbox--text">Круглый стол (до 32 чел.)</div>
+                </label>
+                <label class="checkbox" for="one-more-room-resort-3">
+                  <input id="one-more-room-resort-3" type="radio" name="TABLE" value="Переговорные (до 40 чел.)" data-table="3" data-table-people="40"
+                         class="checkbox--checkbox">
+                  <div class="checkbox--appearance"></div>
+                  <div class="checkbox--text">Переговорные (до 40 чел.)</div>
+                </label>
+                <label class="checkbox" for="one-more-room-resort-4">
+                  <input id="one-more-room-resort-4" type="radio" name="TABLE" value="Тимбилдинг (до 50 чел.)" data-table="4" data-table-people="50"
+                         class="checkbox--checkbox">
+                  <div class="checkbox--appearance"></div>
+                  <div class="checkbox--text">Тимбилдинг (до 50 чел.)</div>
+                </label>
+              </div>
+              <div class="table-buttons hidden" data-room="2">
+                <label class="checkbox" for="one-more-room-resort-5">
+                  <input id="one-more-room-resort-5" type="radio" name="TABLE" value="Совещание (до 28 чел.)" data-table="5" data-table-people="28"
+                         class="checkbox--checkbox">
+                  <div class="checkbox--appearance"></div>
+                  <div class="checkbox--text">Совещание (до 28 чел.)</div>
+                </label>
+                <label class="checkbox" for="one-more-room-resort-6">
+                  <input id="one-more-room-resort-6" type="radio" name="TABLE" value="Театр (до 28 чел.)" data-table="6" data-table-people="28"
+                         class="checkbox--checkbox">
+                  <div class="checkbox--appearance"></div>
+                  <div class="checkbox--text">Театр (до 28 чел.)</div>
+                </label>
+              </div>
+            </div>
+            <div class="form--right-col">
+              <img data-table-type="1" src="../../../images/business/mustag-1.png">
+              <img class="hidden" data-table-type="2" src="../../../images/business/mustag-2.jpg">
+              <img class="hidden" data-table-type="3" src="../../../images/business/mustag-3.png">
+              <img class="hidden" data-table-type="4" src="../../../images/business/mustag-4.png">
+              <img class="hidden" data-table-type="5" src="../../../images/business/taejni-1.jpg">
+              <img class="hidden" data-table-type="6" src="../../../images/business/taejni-2.png">
+            </div>
+          </div>
+          <div class="form--subtitle">Дата и время</div>
+          <div class="form--two-col form--row">
+            <div class="form--left-col">
+              <div class="input-field" data-input-field data-calendar-field>
+                <input type="text" name="DATE" class="input-field--input" data-calendar required>
+                <div class="caption input-field--placeholder" data-input-placeholder>Дата мероприятия
+                </div>
+              </div>
+            </div>
+            <div class="form--right-col half-inputs">
+              <div class="input-field time-input" data-input-field>
+                <input type="time" name="DATE_START" data-date-start class="input-field--input" required>
+                <div class="caption input-field--placeholder" data-input-placeholder>Время начала
+                  мероприятия
+                </div>
+              </div>
+              <div class="input-field time-input" data-input-field>
+                <input type="time" name="DATE_END" data-date-end class="input-field--input" required>
+                <div class="caption input-field--placeholder" data-input-placeholder>Время окончания
+                  мероприятия
+                </div>
+              </div>
+            </div>
+          </div>
+          <details>
+            <summary class="form--subtitle">Кофе-брейк</summary>
+            <div class="form--two-col form--row">
+              <div class="form--left-col">
+                <div class="input--top-text">Кофе-брейк</div>
+                <label class="checkbox" for="coffee-break">
+                  <input id="coffee-break" type="checkbox" name="coffee-break" class="checkbox--checkbox"
+                         data-show-target="coffee-menu">
+                  <div class="checkbox--appearance"></div>
+                  <div class="checkbox--text">Да</div>
+                </label>
+              </div>
+              <div class="form--right-col hidden" data-show-name="coffee-menu">
+                <div class="input--top-text">Обслуживание официантом</div>
+                <label class="checkbox" for="waiter">
+                  <input id="waiter" type="checkbox" name="waiter" class="checkbox--checkbox">
+                  <div class="checkbox--appearance"></div>
+                  <div class="checkbox--text">Да</div>
+                </label>
+              </div>
+            </div>
+            <div class="form--row hidden" data-show-name="coffee-menu">
+              <div class="input--top-text">Какой Тип Меню Кофе-брейка вы предпочитаете</div>
+              <div class="form-group-inline">
+                <label class="checkbox" for="coffee-break-type-1">
+                  <input id="coffee-break-type-1" type="radio" name="coffee-break-type"
+                         class="checkbox--checkbox" value="Стандарт">
+                  <div class="checkbox--appearance"></div>
+                  <div class="checkbox--text">Стандарт</div>
+                </label>
+                <label class="checkbox" for="coffee-break-type-2">
+                  <input id="coffee-break-type-2" type="radio" name="coffee-break-type"
+                         class="checkbox--checkbox" value="Стандарт-плюс">
+                  <div class="checkbox--appearance"></div>
+                  <div class="checkbox--text">Стандарт-плюс</div>
+                </label>
+                <label class="checkbox" for="coffee-break-type-3">
+                  <input id="coffee-break-type-3" type="radio" name="coffee-break-type"
+                         class="checkbox--checkbox" value="Бизнес">
+                  <div class="checkbox--appearance"></div>
+                  <div class="checkbox--text">Бизнес</div>
+                </label>
+              </div>
+              <div class="input--bottom-text">Для просмотра состава меню перейдите по ссылке <a href="#">Menu MUSTAG, pdf, 12 mb</a></div>
+            </div>
+          </details>
+
+          <details>
+            <summary class="form--subtitle">Аренда оборудования</summary>
+            <div class="form--two-col form--row equipment-row">
+              <div class="form--left-col d-flex">
+                <label class="checkbox flex-bottom" for="equipment-1">
+                  <input id="equipment-1" type="checkbox" name="equipment[]" data-equipment class="checkbox--checkbox" data-price="500" value="Мультимедийный проектор с экраном">
+                  <div class="checkbox--appearance"></div>
+                  <div class="checkbox--text">Мультимедийный проектор с экраном</div>
+                </label>
+              </div>
+            </div>
+
+            <div class="form--two-col form--row equipment-row">
+              <div class="form--left-col d-flex">
+                <label class="checkbox flex-bottom" for="equipment-2">
+                  <input id="equipment-2" type="checkbox" name="equipment[]" data-equipment class="checkbox--checkbox" data-price="0" value="Магнитно-маркерная доска">
+                  <div class="checkbox--appearance"></div>
+                  <div class="checkbox--text">Магнитно-маркерная доска</div>
+                </label>
+              </div>
+            </div>
+
+            <div class="form--two-col form--row equipment-row">
+              <div class="form--left-col d-flex">
+                <label class="checkbox flex-bottom" for="equipment-3">
+                  <input id="equipment-3" type="checkbox" name="equipment[]" data-equipment class="checkbox--checkbox" data-price="300" value="Ноутбук">
+                  <div class="checkbox--appearance"></div>
+                  <div class="checkbox--text">Ноутбук</div>
+                </label>
+              </div>
+            </div>
+
+            <div class="form--two-col form--row equipment-row">
+              <div class="form--left-col d-flex">
+                <label class="checkbox flex-bottom" for="equipment-4">
+                  <input id="equipment-4" type="checkbox" name="equipment[]" data-equipment class="checkbox--checkbox" data-price="500" value="ЖК-ТВ 42”">
+                  <div class="checkbox--appearance"></div>
+                  <div class="checkbox--text">ЖК-ТВ 42”</div>
+                </label>
+              </div>
+            </div>
+
+            <div class="form--two-col form--row equipment-row">
+              <div class="form--left-col d-flex">
+                <label class="checkbox flex-bottom" for="equipment-5">
+                  <input id="equipment-5" type="checkbox" name="equipment[]" data-equipment class="checkbox--checkbox" data-price="300" value="ЖК-ТВ 32”">
+                  <div class="checkbox--appearance"></div>
+                  <div class="checkbox--text">ЖК-ТВ 32”</div>
+                </label>
+              </div>
+            </div>
+
+            <div class="form--two-col form--row equipment-row">
+              <div class="form--left-col d-flex">
+                <label class="checkbox flex-bottom" for="equipment-6">
+                  <input id="equipment-6" type="checkbox" name="equipment[]" data-equipment class="checkbox--checkbox" data-price="200" value="DVD-проигрыватель">
+                  <div class="checkbox--appearance"></div>
+                  <div class="checkbox--text">DVD-проигрыватель</div>
+                </label>
+              </div>
+            </div>
+
+            <div class="form--two-col form--row equipment-row">
+              <div class="form--left-col d-flex">
+                <label class="checkbox flex-bottom" for="equipment-7">
+                  <input id="equipment-7" type="checkbox" name="equipment[]" data-equipment class="checkbox--checkbox" data-price="300" value="Лазерный принтер (ч/б)">
+                  <div class="checkbox--appearance"></div>
+                  <div class="checkbox--text">Лазерный принтер (ч/б)</div>
+                </label>
+              </div>
+            </div>
+          </details>
+          <div class="form--add-day-container" data-add-day-container>
+
+          </div>
+          <div class="form--add-day">
+            <div class="plus-button" data-add-day-button></div>
+            <div class="plus-text"> Добавить день</div>
+          </div>
+
+          <div class="form--subtitle">Контактные данные</div>
+          <div class="form--row form--row-mobile">
+            <div class="input-field" data-input-field>
+              <input type="text" class="input-field--input" required>
+              <div class="caption input-field--placeholder" data-input-placeholder>ФИО контактного лица
+              </div>
+            </div>
+          </div>
+          <div class="form--two-col form--row form--row-mobile">
+            <div class="form--left-col">
+              <div class="input-field" data-input-field>
+                <input type="tel" class="input-field--input" required>
+                <div class="caption input-field--placeholder" data-input-placeholder>Телефон
+                </div>
+              </div>
+            </div>
+            <div class="form--right-col">
+              <div class="input-field" data-input-field>
+                <input type="email" class="input-field--input" required>
+                <div class="caption input-field--placeholder" data-input-placeholder>Email
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="form--row">
+            <div class="input-field" data-input-field data-textarea-field>
+              <textarea name="COMMENT" rows="1" class="input-field--input input-field--textarea"></textarea>
+              <div class="caption input-field--placeholder" data-input-placeholder>Комментарий к заявке
+              </div>
+            </div>
+          </div>
+          <div class="form--row form--row-mobile">
+            <div class="form--price"><span class="form--price-sum"><span>0</span> рублей</span><span class="form--price-text">— предварительная цена заказа</span></div>
+          </div>
+          <div class="form--two-col form--row">
+            <button class="colored-button" type="submit">Отправить заявку</button>
+            <div class="form--privacy"><p>Нажимая на&nbsp;кнопку, вы&nbsp;даете свое согласие на&nbsp;<a href="#">обработку персональных данных</a></p></div>
+          </div>
+        </form>
+
+        <div class="popup--success">
+          <div class="popup--success-title">Спасибо!</div>
+          <div class="popup--success-desc">Мы обработаем вашу заявку и свяжемся с вами по указанным данным.</div>
+          <form class="form_hidden" method="get" action="https://echo.htmlacademy.ru" autocomplete="off">
+            <input type="hidden" name="SEND_USER_MAIL" data-send-user-mail value="">
+            <input type="hidden" name="RESULT_ID" data-result-id value="">
+          </form>
+          <div class="popup--success-list">
+            <button class="popup--link popup--link-send" type="submit">Отправить заказ на почту</button>
+            <a class="popup--link popup--link-print" target="_blank">Распечатать заказ (PDF)</a>
+            <a class="popup--link popup--link-back">Вернуться назад</a>
+          </div>
+        </div>
+
+        <template>
+
+          <div class="form--two-col form--row" data-add-day>
+            <div class="form--left-col">
+              <div class="input-field" data-input-field>
+                <input type="text" class="input-field--input" name="ADD_DAY[]" data-calendar required>
+                <div class="caption input-field--placeholder" data-input-placeholder>Дополнительный день
+                </div>
+                <div class="remove" data-remove-day>Удалить <span class="cross"></span></div>
+              </div>
+            </div>
+            <div class="form--right-col half-inputs">
+              <div class="input-field time-input" data-input-field>
+                <input type="time" class="input-field--input" name="ADD_DAY_START[]" data-add-day-start required>
+                <div class="caption input-field--placeholder" data-input-placeholder>Время начала
+                  мероприятия
+                </div>
+              </div>
+              <div class="input-field time-input" data-input-field>
+                <input type="time" class="input-field--input" name="ADD_DAY_END[]" data-add-day-end required>
+                <div class="caption input-field--placeholder" data-input-placeholder>Время окончания
+                  мероприятия
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="form--right-col half-inputs" data-equipment-date>
+            <div class="input-field time-input" data-input-field>
+              <input type="time" class="input-field--input" data-equipment-start required>
+              <div class="caption input-field--placeholder" data-input-placeholder>Время начала аренды
+              </div>
+            </div>
+            <div class="input-field time-input" data-input-field>
+              <input type="time" class="input-field--input" data-equipment-end required>
+              <div class="caption input-field--placeholder" data-input-placeholder>Время окончания
+                аренды
+              </div>
+            </div>
+          </div>
+        </template>
+      </div>
+    </div>
+  </div>
+</div>

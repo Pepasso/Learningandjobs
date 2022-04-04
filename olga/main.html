@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" type='image/png' sizes='48x48' href="<%= require('../../images/favicon.png') %>">
+    <title>Гостиница Ольга</title>
+</head>
+
+<body class="preloading">
+<%= require('html-loader!../../core/components/preloader/preloader.html') %>
+<%= require('html-loader!../../core/components/intro/intro.html') %>
+<%= require('html-loader!../../core/components/header/header.html') %>
+<div id="barba-wrapper">
+    <div class="barba-container" data-namespace="main">
+        <main class="main">
+            <div class="screens">
+                <section class="screen screen--1">
+                    <div class="bg-screen-wrapper">
+                        <img class="bg-screen" data-src="bg-screen-1" data-url="<%= require('../../images/bg-screen-1.png') %>" alt=""
+                             src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                        />
+                    </div>
+                    <div class="screen__box screen__box--top">
+                        <article class="screen-content">
+                            <div class="screen-content__capture"></div>
+                            <h2 class="screen-content__title">О&nbsp;гостинице</h2>
+                            <p class="screen-content__text">Гостиница Ольга находится в&nbsp;самом сердце горы Зелёная,
+                                в&nbsp;месте уникального мягкого климата и&nbsp;незабываемых
+                                пейзажей
+                            </p>
+                            <div class="screen-content__line"></div>
+                        </article>
+                    </div>
+                  <div class="screen__box screen__box--bottom">
+                    <div class="more">
+                      <a href="/about.html" class="button button--more more__button" data-link-type="main">
+                        <div class="button__more-arrow">
+                          <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg"
+                               viewBox="0 0 6.97 21.01">
+                            <defs>
+                              <style>.cls-1 {
+                                fill: #fff;
+                              }</style>
+                            </defs>
+                            <path class="cls-1"
+                                  d="M297.47,410.89l3.49,3.2-.87.8-3.49-3.2.87-.8Zm0,0,.87.8-3.49,3.2-.87-.8,3.49-3.2Zm.5,1v20h-1v-20Z"
+                                  transform="translate(-293.98 -410.89)"/>
+                          </svg>
+                        </div>
+                        <span class="button__more-text">подробнее</span>
+                      </a>
+                    </div>
+                  </div>
+                </section>
+                <section class="screen screen--2">
+                    <div class="bg-screen-wrapper">
+                        <img class="bg-screen" data-src="bg-screen-2" data-url="<%= require('../../images/bg-screen-2.png') %>" alt=""
+                             src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"/>
+                    </div>
+                    <div class="screen__box screen__box--top">
+                        <article class="screen-content">
+                            <div class="screen-content__capture"></div>
+                            <h2 class="screen-content__title">Проживание</h2>
+                            <p class="screen-content__text">Завораживающий вид из&nbsp;окна и&nbsp;уютная атмосфера в&nbsp;комфортных
+                                номерах разной категории</p>
+                            <div class="screen-content__line"></div>
+                        </article>
+                    </div>
+                    <div class="screen__box screen__box--bottom">
+                        <div class="more">
+                            <a href="/accom.html" class="button button--more more__button" data-link-type="main">
+                                <div class="button__more-arrow">
+                                    <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg"
+                                         viewBox="0 0 6.97 21.01">
+                                        <defs>
+                                            <style>.cls-1 {
+                                                fill: #fff;
+                                            }</style>
+                                        </defs>
+                                        <path class="cls-1"
+                                              d="M297.47,410.89l3.49,3.2-.87.8-3.49-3.2.87-.8Zm0,0,.87.8-3.49,3.2-.87-.8,3.49-3.2Zm.5,1v20h-1v-20Z"
+                                              transform="translate(-293.98 -410.89)"/>
+                                    </svg>
+                                </div>
+                                <span class="button__more-text">подробнее</span>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+                <section class="screen screen--3">
+                    <div class="bg-screen-wrapper">
+                        <img class="bg-screen" data-src="bg-screen-3" data-url="<%= require('../../images/bg-screen-3.png') %>" alt=""
+                             src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                        />
+                    </div>
+                    <div class="screen__box screen__box--top">
+                        <article class="screen-content">
+                            <div class="screen-content__capture"></div>
+                            <h2 class="screen-content__title">Рестораны и&nbsp;бары</h2>
+                            <p class="screen-content__text">Уютный лобби-бар, роскошные рестораны, кафе с&nbsp;сытными
+                                завтраками и&nbsp;обедами, пиво со&nbsp;всего
+                                мира в&nbsp;ресторане в&nbsp;баварском стиле</p>
+                            <div class="screen-content__line"></div>
+                        </article>
+                    </div>
+                  <div class="screen__box screen__box--bottom">
+                    <div class="more">
+                      <a href="/restaurant.html" class="button button--more more__button" data-link-type="main">
+                        <div class="button__more-arrow">
+                          <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg"
+                               viewBox="0 0 6.97 21.01">
+                            <defs>
+                              <style>.cls-1 {
+                                fill: #fff;
+                              }</style>
+                            </defs>
+                            <path class="cls-1"
+                                  d="M297.47,410.89l3.49,3.2-.87.8-3.49-3.2.87-.8Zm0,0,.87.8-3.49,3.2-.87-.8,3.49-3.2Zm.5,1v20h-1v-20Z"
+                                  transform="translate(-293.98 -410.89)"/>
+                          </svg>
+                        </div>
+                        <span class="button__more-text">подробнее</span>
+                      </a>
+                    </div>
+                  </div>
+                </section>
+                <section class="screen screen--4">
+                    <div class="bg-screen-wrapper">
+                        <img class="bg-screen" data-src="bg-screen-4" data-url="<%= require('../../images/bg-screen-4.png') %>" alt=""
+                             src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                        />
+                    </div>
+                    <div class="screen__box screen__box--top">
+                        <article class="screen-content">
+                            <div class="screen-content__capture"></div>
+                            <h2 class="screen-content__title">Красота и&nbsp;здоровье</h2>
+                            <p class="screen-content__text">Расслабиться и&nbsp;получить заряд бодрости после активного
+                                спортивного дня в&nbsp;русской бане, финской
+                                сауне или SPA-комплексе</p>
+                            <div class="screen-content__line"></div>
+                        </article>
+                    </div>
+                  <div class="screen__box screen__box--bottom">
+                    <div class="more">
+                      <a href="/spa.html" class="button button--more more__button" data-link-type="main">
+                        <div class="button__more-arrow">
+                          <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg"
+                               viewBox="0 0 6.97 21.01">
+                            <defs>
+                              <style>.cls-1 {
+                                fill: #fff;
+                              }</style>
+                            </defs>
+                            <path class="cls-1"
+                                  d="M297.47,410.89l3.49,3.2-.87.8-3.49-3.2.87-.8Zm0,0,.87.8-3.49,3.2-.87-.8,3.49-3.2Zm.5,1v20h-1v-20Z"
+                                  transform="translate(-293.98 -410.89)"/>
+                          </svg>
+                        </div>
+                        <span class="button__more-text">подробнее</span>
+                      </a>
+                    </div>
+                  </div>
+                </section>
+                <section class="screen screen--5">
+                    <div class="bg-screen-wrapper">
+                        <img class="bg-screen" data-src="bg-screen-5" data-url="<%= require('../../images/bg-screen-5.png') %>" alt=""
+                             src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                        />
+                    </div>
+                    <div class="screen__box screen__box--top">
+                        <article class="screen-content">
+                            <div class="screen-content__capture"></div>
+                            <h2 class="screen-content__title">Развлечения и&nbsp;активный отдых</h2>
+                            <p class="screen-content__text">Здесь найдется развлечение для каждого! Современный крытый
+                                каток, детская игровая комната, бильярд и&nbsp;многое
+                                другое
+                            </p>
+                            <div class="screen-content__line"></div>
+                        </article>
+                    </div>
+                  <div class="screen__box screen__box--bottom">
+                    <div class="more">
+                      <a href="/fun.html" class="button button--more more__button" data-link-type="main">
+                        <div class="button__more-arrow">
+                          <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg"
+                               viewBox="0 0 6.97 21.01">
+                            <defs>
+                              <style>.cls-1 {
+                                fill: #fff;
+                              }</style>
+                            </defs>
+                            <path class="cls-1"
+                                  d="M297.47,410.89l3.49,3.2-.87.8-3.49-3.2.87-.8Zm0,0,.87.8-3.49,3.2-.87-.8,3.49-3.2Zm.5,1v20h-1v-20Z"
+                                  transform="translate(-293.98 -410.89)"/>
+                          </svg>
+                        </div>
+                        <span class="button__more-text">подробнее</span>
+                      </a>
+                    </div>
+                  </div>
+                </section>
+                <section class="screen screen--6">
+                    <div class="bg-screen-wrapper">
+                        <img class="bg-screen" data-src="bg-screen-6" data-url="<%= require('../../images/bg-screen-6.png') %>" alt=""
+                             src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                        />
+                    </div>
+                    <div class="screen__box screen__box--top">
+                        <article class="screen-content">
+                            <div class="screen-content__capture"></div>
+                            <h2 class="screen-content__title">Конференции</h2>
+                            <p class="screen-content__text">Современные залы и отличная организация позволяют гармонично
+                                сочетать все аспекты идеального мероприятия</p>
+                            <div class="screen-content__line"></div>
+                        </article>
+                    </div>
+                    <div class="screen__box screen__box--bottom">
+                      <div class="more">
+                        <a href="/business.html" class="button button--more more__button" data-link-type="main">
+                          <div class="button__more-arrow">
+                            <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg"
+                                 viewBox="0 0 6.97 21.01">
+                              <defs>
+                                <style>.cls-1 {
+                                  fill: #fff;
+                                }</style>
+                              </defs>
+                              <path class="cls-1"
+                                    d="M297.47,410.89l3.49,3.2-.87.8-3.49-3.2.87-.8Zm0,0,.87.8-3.49,3.2-.87-.8,3.49-3.2Zm.5,1v20h-1v-20Z"
+                                    transform="translate(-293.98 -410.89)"/>
+                            </svg>
+                          </div>
+                          <span class="button__more-text">подробнее</span>
+                        </a>
+                      </div>
+                    </div>
+                </section>
+            </div>
+
+            <div class="screen-control">
+                <div class="screen-control__current">1</div>
+                <div class="screen-control__sep"></div>
+                <div class="screen-control__all">6</div>
+            </div>
+            <div class="screen-circle"></div>
+
+            <div class="screen-control screen-control_horizontal">
+                <div class="screen-control__current screen-control__current_horizontal">1</div>
+                <div class="screen-control__sep screen-control__sep_horizontal"></div>
+                <div class="screen-control__all screen-control__all_horizontal">6</div>
+            </div>
+            <div class="screen-circle screen-circle_horizontal"></div>
+
+        </main>
+    </div>
+</div>
+<%= require('html-loader!../../core/components/footer/footer.html') %>
+</body>
+
+</html>

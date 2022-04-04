@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="icon" type='image/png' sizes='48x48' href="<%= require('../../images/favicon.png') %>">
+  <title>Аренда квадроциклов</title>
+</head>
+
+<body class="inner-page">
+<%= require('html-loader!../../core/components/preloader/preloader.html') %>
+<%= require('html-loader!../../core/components/header/header.html') %>
+<div id="barba-wrapper">
+  <div class="barba-container" data-namespace="rent">
+    <div class="inner-first-screen inner-first-screen_100" data-screen>
+      <div class="inner-first-screen__top inner-header">
+        <img class="inner-header__bg"
+             src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+             data-src="bg-screen-rent" data-url="<%= require('../../images/bg-screen-4.png') %>">
+        <a href="/" class="button button--more inner-header__go-to-main" data-screen-index="3">
+          <div class="button__more-arrow">
+            <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 6.97 21.01">
+              <path d="M297.47,410.89l3.49,3.2-.87.8-3.49-3.2.87-.8Zm0,0,.87.8-3.49,3.2-.87-.8,3.49-3.2Zm.5,1v20h-1v-20Z"
+                    transform="translate(-293.98 -410.89)"/>
+            </svg>
+          </div>
+          <span class="button__more-text">подробнее</span>
+        </a>
+      </div>
+      <div class="inner-first-screen__bottom">
+        <div class="inner-first-screen__title">Аренда квадроциклов</div>
+        <div class="inner-first-screen__text inner-first-screen__text_inner">
+          Мы поможем Вам осуществить незабываемый отдых на квадроциклах.
+        </div>
+      </div>
+    </div>
+    <div class="info-block-1" data-screen data-info="1">
+      <div class="info-block-1__wrapper">
+        <img class="info-block-1__bg"
+             src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+             data-src="rent-1" data-url="<%= require('../../images/spa/1.jpg') %>">
+        <div class="info-block-1__content info-block-1__content_text-left info-block-1__content_anim-left">
+          <div class="info-block-1__timetable">Пн-Пт с 12:00 до 24:00<br>Сб-Вс и праздники с 10:00 до 24:00</div>
+          <div class="info-block-1__title">Аренда квадроциклов</div>
+          <div class="info-block-1__text">
+            "Что-то про Квадроциклы"
+          </div>
+          <button class="button-2 info-block-1__button" data-title-popup="Аренда квадроциклов" data-date-min="10:00" data-date-max="24:00" data-type-popup="1"
+                  data-open-popup="rent">забронировать</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="two-columns">
+      <div class="two-columns__column">
+        <div class="info-block-1 info-block-1__left info-block-1_column">
+          <div class="info-block-1__wrapper">
+            <img class="info-block-1__bg" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="rent-2"
+                 data-url="<%= require('../../images/spa/2.jpg') %>">
+            <div class="info-block-1__content info-block-1__content_anim-left-alt">
+              <div class="info-block-1__timetable">Ежедневно с 12:00 до 24:00</div>
+              <div class="info-block-1__title">Кедровая бочка</div>
+              <div class="info-block-1__text">
+                Мини-сауна «Кедровая бочка» изготовлена из древесины сибирских кедров. Фитобочка является уникальным природным методом оздоровления, основанная на целебном воздействии кедра и пара на организм. Способствует повышению иммунитета, снимет усталость и наполнит жизненной энергией.
+              </div>
+              <button class="button-2 info-block-1__button" data-title-popup="Аренда квадроциклов" data-date-min="10:00" data-date-max="24:00" data-type-popup="2"
+                  data-open-popup="rent">забронировать</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="two-columns__column">
+        <div class="info-block-1 info-block-1_column">
+          <div class="info-block-1__wrapper">
+            <img class="info-block-1__bg" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="rent-3"
+                 data-url="<%= require('../../images/spa/3.jpg') %>">
+            <div class="info-block-1__content info-block-1__content--right info-block-1__content_anim-left">
+              <div class="info-block-1__timetable">Ежедневно с 12:00 до 24:00</div>
+              <div class="info-block-1__title">Инфракрасная сауна</div>
+              <div class="info-block-1__text">
+                Инфракрасная сауна – это кабинка, в которой на тело посетителя действует инфракрасное излучение. Инфракрасное излучение представляет собой естественное выделение тепла нагретым объектом. Внутри кабины происходит прогревание всех тканей человека, которое стимулирует и тонизирует деятельность организма.
+              </div>
+              <button class="button-2 info-block-1__button" data-title-popup="Аренда квадроциклов" data-date-min="10:00" data-date-max="24:00" data-type-popup="3"
+                  data-open-popup="rent">забронировать</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="two-columns">
+      <div class="two-columns__column">
+        <div class="info-block-1 info-block-1__right info-block-1_column">
+          <div class="info-block-1__wrapper">
+            <img class="info-block-1__bg info-block-1__bg_right" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="rent-4"
+                 data-url="<%= require('../../images/spa/4.jpg') %>">
+            <div class="info-block-1__content info-block-1__content_anim-right">
+              <div class="info-block-1__timetable">Ежедневно, по запросу</div>
+              <div class="info-block-1__title">Массаж. Шоколадное обертывание.</div>
+              <div class="info-block-1__text">
+                Массаж – лучший способ расслабиться и снять стресс. Он оздоровляет и лечит, успокаивает и тонизирует, улучшает обмен веществ и повышает аппетит. Усилить положительный эффект от процедуры поможет шоколадное обертывание.
+              </div>
+              <button class="button-2 info-block-1__button" data-title-popup="Аренда квадроциклов" data-date-min="10:00" data-date-max="24:00" data-type-popup="4"
+                  data-open-popup="rent">забронировать</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="two-columns__column">
+        <div class="info-block-1 info-block-1__right info-block-1_column">
+          <div class="info-block-1__wrapper">
+            <img class="info-block-1__bg" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="rent-5"
+                 data-url="<%= require('../../images/spa/5.jpg') %>">
+            <div class="info-block-1__content info-block-1__content--right info-block-1__content_anim-right-alt">
+              <div class="info-block-1__timetable">Ежедневно, круглосуточно</div>
+              <div class="info-block-1__title">Солярий</div>
+              <div class="info-block-1__text">
+                Современные аппараты вертикального и горизонтального солярия всегда к услугам тех, кто даже на отдыхе предпочитает выглядеть эффектно и привлекательно.
+              </div>
+              <button class="button-2 info-block-1__button" data-title-popup="" data-date-min="10:00" data-date-max="24:00" data-type-popup="5"
+                  data-open-popup="rent">забронировать</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="info-block-1 info-block-1__right" data-screen data-info="3">
+      <div class="info-block-1__wrapper">
+        <img class="info-block-1__bg"
+             src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+             data-src="rent-6" data-url="<%= require('../../images/spa/6.jpg') %>">
+        <div class="info-block-1__content info-block-1__content--right info-block-1__content_text-left info-block-1__content_anim-right">
+          <div class="info-block-1__timetable">Ежедневно, круглосуточно</div>
+          <div class="info-block-1__title">Русская баня</div>
+          <div class="info-block-1__text">
+            Жаркая парная, наполненная волшебным ароматом душистых горных трав, хороший банный веник- все это способно сотворить чудо на
+            земле. После жаркой баньки можно искупаться в прохладной купели. В бане оборудована удобная парная, душевая, а также комната, где можно
+            посидеть с друзьями в атмосфере традиционного застолья.
+          </div>
+          <button class="button-2 info-block-1__button" data-title-popup="Аренда русской бани" data-type-popup="6" data-open-popup="rent">забронировать</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="info-block-1" data-screen data-info="4">
+      <div class="info-block-1__wrapper">
+        <img class="info-block-1__bg"
+             src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+             data-src="rent-7" data-url="<%= require('../../images/spa/7.jpg') %>">
+        <div class="info-block-1__content info-block-1__content_text-left info-block-1__content_anim-left">
+          <div class="info-block-1__timetable">Ежедневно, круглосуточно</div>
+          <div class="info-block-1__title">Сауна в Берлоге</div>
+          <div class="info-block-1__text">
+            В гостинице Берлога имеется финская сауна, оснащенная бассейном с водопадом.
+          </div>
+          <button class="button-2 info-block-1__button" data-title-popup="Аренда сауны в Берлоге" data-type-popup="7" data-open-popup="rent">забронировать</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="contacts contacts_first contacts_lower">
+      <button class="button-2 contacts-block__button_top">смотреть прайс-лист</button>
+      <div class="contacts-block contacts-block_center">
+        <div class="contacts-block__title">Бронирование по телефону</div>
+        <a href="tel:+79617103555" class="contacts-block__item">+7 (961) 710-3555</a>
+      </div>
+    </div>
+
+    <div class="inner-footer" data-screen>
+      <div class="inner-footer__box--top">
+        <img class="inner-footer__bg"
+             src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+             data-src="footer-rent" data-url="<%= require('../../images/bg-screen-5.png') %>">
+        <div class="inner-footer__content">
+          <div class="inner-footer__caption">следующий раздел</div>
+          <div class="inner-footer__title">Развлечения</div>
+        </div>
+        <a href="/fun.html" class="button button--more more__button inner-footer__go-to-section" data-link-type="footer">перейти в раздел</a>
+      </div>
+      <div class="inner-footer__box--bottom">
+        <button class="button button--more button--more-light inner-footer__go-top"></button>
+        <div class="inner-footer__bot-wrap">
+          <div class="inner-footer__bot-title inner-footer__bot-title_light">Ольга</div>
+          <div class="inner-footer__bot-text">Гостинично-Развлекательный Комплекс</div>
+          <div class="inner-footer-contacts">
+            <a href="tel:83843900222" class="inner-footer-contacts__side inner-footer-contacts__side--left">+7 (3843) 900-222</a>
+            <button class="button-2 inner-footer-contacts__button">забронировать</button>
+            <a href="mailto:reserve@olgahotel.ru" class="inner-footer-contacts__side inner-footer-contacts__side--right">reserve@olgahotel.ru</a>
+          </div>
+          <div class="inner-footer-social">
+            <a href="https://vk.com/olgaberloga_sheregesh" class="inner-footer-social__item" target="_blank">Вконтакте</a>
+            <a href="https://www.facebook.com/GrkOlga/" class="inner-footer-social__item" target="_blank">facebook</a>
+            <a href="https://www.instagram.com/olga_berloga/" class="inner-footer-social__item" target="_blank">instagram</a>
+          </div>
+        </div>
+        <div class="inner-footer__bottom">
+          <div class="inner-footer__bottom-item inner-footer__bottom-item-absolute">Россия, Кемеровская
+            область, пгт. Шерегеш, гора Зеленая.
+          </div>
+          <div class="inner-footer__bottom-item inner-footer__bottom-item--middle">Грк Ольга, Шерегеш &copy;&nbsp;2013&ndash;2018</div>
+          <div class="inner-footer__bottom-item inner-footer__bottom-item--right">
+            <span>design by</span>
+            <div class="copyright">Only<span>. digital</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <%= require('html-loader!../../core/components/popup-rent/popup-rent.html') %>
+  </div>
+</div>
+<%= require('html-loader!../../core/components/footer/footer.html') %>
+</body>
+
+</html>
